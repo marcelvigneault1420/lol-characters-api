@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UpdateController : ControllerBase
+    {
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Update(Guid id)
+        {
+            return Ok("Update done");
+        }
+    }
+}
